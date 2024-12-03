@@ -25,10 +25,16 @@
   }
 
   &__links {
-    font-family: Inter;
-    font-size: 20px;
-    font-weight: 400;
-    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    a {
+      font-size: 20px;
+      font-weight: 400;
+      color: #fff;
+      text-decoration: none;
+    }
   }
 
   &__search {
