@@ -1,0 +1,42 @@
+.donated {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 20px;
+  min-height: calc(100vh - 188px - 137px);
+
+  &__subtitle {
+    margin-bottom: 24px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #000;
+    text-align: center;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+
+    &__card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      width: 245px;
+      height: 264px;
+      padding: 24px;
+      border-radius: 20px;
+      border: 3px solid #005695;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 400;
+      color: #000;
+
+      img {
+        width: 108px;
+        height: 91px;
+      }
+    }
+  }
+}

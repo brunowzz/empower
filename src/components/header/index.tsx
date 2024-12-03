@@ -7,12 +7,16 @@ export default function Header() {
   return (
     <header className={S.header}>
       <section className={S.header__logo}>
-        <img
-          className={S.header__logo__image}
-          src={logo}
-          alt="imagem de um livro"
-        />
-        <h1 className={S.header__logo__title}>Livros Vai na Web</h1>
+        <NavLink to="/">
+          <img
+            className={S.header__logo__image}
+            src={logo}
+            alt="imagem de um livro"
+          />
+        </NavLink>
+        <NavLink to="/">
+          <h1 className={S.header__logo__title}>Livros Vai na Web</h1>
+        </NavLink>
       </section>
       <nav className={S.header__links}>
         <NavLink to="/">Inicio</NavLink>
