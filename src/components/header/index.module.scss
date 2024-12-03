@@ -3,7 +3,13 @@
   align-items: center;
   justify-content: space-between;
   height: 137px;
+  padding: 24px;
   background: linear-gradient(90deg, #001b2f 0%, #005695 100%);
+
+  @media (max-width: 640px) {
+    flex-direction: column;
+    padding: 16px;
+  }
 
   &__logo {
     display: flex;
@@ -21,12 +27,17 @@
       font-style: normal;
       font-weight: 700;
       color: #fff;
+
+      @media (max-width: 1024px) {
+        font-size: 22px;
+      }
     }
   }
 
   &__links {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 16px;
 
     a {
@@ -34,6 +45,10 @@
       font-weight: 400;
       color: #fff;
       text-decoration: none;
+    }
+
+    @media (max-width: 640px) {
+      gap: 8px;
     }
   }
 
@@ -60,6 +75,10 @@
       &::placeholder {
         color: #fff;
       }
+    }
+
+    @media (max-width: 1280px) {
+      display: none;
     }
   }
 }
