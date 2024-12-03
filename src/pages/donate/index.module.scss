@@ -1,0 +1,52 @@
+.donate {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px 20px;
+  min-height: calc(100vh - 188px - 137px);
+
+  &__subtitle {
+    margin-bottom: 24px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #000;
+    text-align: center;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 24px;
+    border-radius: 20px;
+    border: 3px solid #005695;
+    max-width: 442px;
+
+    &__title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    &__input {
+      height: 42px;
+      padding: 12px;
+      border-radius: 15px;
+      border: 2px solid #005695;
+      background: rgba(0, 0, 0, 0);
+    }
+
+    &__submit {
+      height: 40px;
+      border-radius: 10px;
+      background: #005695;
+      border: none;
+      outline: none;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 400;
+      color: #fff;
+    }
+  }
+}
