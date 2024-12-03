@@ -10,7 +10,7 @@ export default function Footer() {
     <footer className={S.footer}>
       <section className={S.footer__links}>
         <h3 className={S.footer__links__phone}>4002-8922</h3>
-        <nav>
+        <nav className={S.footer__links__socials}>
           <img src={face} alt="facebook" /> <img src={twitt} alt="twitter" />
           <img src={youtube} alt="youtube" />
           <img src={linkedin} alt="linkedin" />
